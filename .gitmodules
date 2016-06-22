@@ -7,7 +7,7 @@
 	url = git@github.com:dlfinis/sigma-frontend.git
 	branch = development
 
-[submodule "sigma-frontent-dist"]
+[submodule "sigma-frontend-dist"]
 	path = dist
-	url = git@github.com:dlfinis/sigma-frontent-dist.git
+	url = git@github.com:dlfinis/sigma-frontend-dist.git
 
