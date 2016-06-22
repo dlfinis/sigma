@@ -19,9 +19,12 @@
     "dependencies": {},
     "devDependencies": {},
     "scripts": {
-        "install": "git submodule update --init --recursive && cd sigma-api && npm install && cd ../sigma-frontend && npm install",
-        "start": "(cd sigma-api && sails lift) & (cd sigma-frontend && grunt serve)"
-    },
+        "install": "cd api/ && npm install && cd ../dist && npm install ",
+        "start": "(cd api && node app.js) & (cd dist && node index.js)",
+		"preload": "git submodule update --init --recursive api frontend",
+		"load": "cd api && npm install && cd ../frontend && npm install && grunt build && cd ../ && git submodule update --init --recursive dist && cd dist/ && npm install",
+		"postload": "(cd api && node app.js) & (cd dist && node index.js)"
+	},
     "repository": {
         "type": "git",
         "url": "git://github.com/dlfinis/sigma.git"
