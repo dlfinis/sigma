@@ -1,0 +1,34 @@
+{
+    "name": "sigma-app",
+    "version": "1.2.0",
+    "description": "Sails & Angular App with separated back-end API and frontend.",
+    "keywords": [
+        "sails.js",
+        "sigma-api",
+        "REST",
+        "API",
+        "JWT",
+        "JSON Web Token",
+        "Passport.js",
+        "sigma-frontend",
+        "angular",
+        "yeoman",
+        "yo-angular"
+    ],
+    "main": "",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "install": "git submodule update --init --recursive && cd sigma-api && npm install && cd ../sigma-frontend && npm install",
+        "start": "(cd sigma-api && sails lift) & (cd sigma-frontend && grunt serve)"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dlfinis/sigma.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dlfinis/sigma/issues"
+    },
+    "author": "DLFinis",
+    "license": "MIT"
+}

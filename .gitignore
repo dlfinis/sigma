@@ -1,0 +1,4 @@
+sigma-frontend/*
+!sigma-frontend/dist
+!sigma-frontend/package.json
+!sigma-frontend/server.js
