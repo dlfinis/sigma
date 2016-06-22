@@ -22,7 +22,7 @@
         "install": "cd api/ && npm install && cd ../dist && npm install ",
         "start": "(cd api && node app.js) & (cd dist && node index.js)",
 		"preload": "git submodule update --init --recursive api frontend",
-		"load": "cd api && npm install && cd ../frontend && npm install && grunt build && cd ../ && git submodule update --init --recursive dist && cd dist/ && npm install",
+		"load": "cd api && npm install && cd ../frontend && npm install && bower install && grunt build && cd ../ && git submodule update --init --recursive dist && cd dist/ && npm install",
 		"postload": "(cd api && node app.js) & (cd dist && node index.js)"
 	},
     "repository": {
