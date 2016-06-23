@@ -1,12 +1,12 @@
 [submodule "api"]
 	path = api
-	url = git@github.com:dlfinis/sigma-api.git
+	url = https://github.com:dlfinis/sigma-api.git
 
 [submodule "frontend"]
 	path = frontend
-	url = git@github.com:dlfinis/sigma-frontend.git
+	url = https://github.com:dlfinis/sigma-frontend.git
 	branch = development
 
 [submodule "dist"]
 	path = dist
-	url = git@github.com:dlfinis/sigma-frontend-dist.git
+	url = https://github.com:dlfinis/sigma-frontend-dist.git
